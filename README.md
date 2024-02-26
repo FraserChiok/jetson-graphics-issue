@@ -10,29 +10,45 @@ Connect the UART cable as follows:
 
 To detect the device and configure gtkterm, run the following commands:
 
+
+### Detect the device
 ```bash
-# Detect the device
 sudo dmesg --follow | grep ttyUSB0
+```
 
-# Open gtkterm with sudo privileges
+### Open gtkterm with sudo privileges
+```bash
 sudo gtkterm
+```
 
-# Configure gtkterm to use ttyUSB0 if detected. Manually set the port and other settings if needed.
+### Configure gtkterm to use ttyUSB0 if detected. Manually set the port and other settings if needed.
 
-# Navigate to the module directory
+### Navigate to the module directory
+```bash
 cd /lib/modules
+```
 
-# Copy necessary files (replace versions accordingly)
+### Copy necessary files (replace versions accordingly)
+```bash
 cp <original_module_version>/extra <new_module_version>/
+```
 
-# Example:
+#### Example:
+```bash
 # cp 5.10.104-tegra-original/extra 5.10.104-tegra-new/
+```
 
-# Navigate to the new module directory
+### Navigate to the new module directory
+```bash
 cd 5.10.104-tegra-new/
+```
 
-# Update module dependency information
+### Update module dependency information
+```bash
 sudo depmod -a
+```
 
-# Reboot the system to apply changes
+### Reboot the system to apply changes
+```bash
 sudo reboot
+```
