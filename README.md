@@ -53,7 +53,7 @@ cp <original_module_version>/extra <new_module_version>/
 
 #### Example:
 ```bash
-# cp 5.10.104-tegra-original/extra 5.10.104-tegra-new/
+cp 5.10.104-tegra-original/extra 5.10.104-tegra-new/
 ```
 
 ### Navigate to the new module directory
