@@ -1,3 +1,7 @@
+#Fix Custom Kernel Compilation Black Screen
+[![Demo and Explanation](http://img.youtube.com/vi/QZCLWzL3CG8/0.jpg)](http://www.youtube.com/watch?v=QZCLWzL3CG8)
+
+
 ## Instructions for UART Cable Connection
 
 Connect the UART cable as follows:
